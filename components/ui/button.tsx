@@ -35,9 +35,18 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, children, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
+    // Radix Slot requires exactly one child element to clone props onto,
+    // so the shimmer overlay can only be added when rendering a real <button>.
+    if (asChild) {
+      return (
+        <Slot className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props}>
+          {children}
+        </Slot>
+      );
+    }
+
     return (
-      <Comp
+      <button
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
@@ -48,7 +57,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             <span className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
           </span>
         )}
-      </Comp>
+      </button>
     );
   }
 );

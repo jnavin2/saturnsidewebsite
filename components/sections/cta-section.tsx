@@ -13,8 +13,8 @@ export function CtaSection() {
           Ready to Put Your Business on Autopilot?
         </h2>
         <p className="mx-auto mt-4 max-w-[480px] text-balance text-base leading-relaxed text-muted">
-          Book a free 30-minute strategy call. No pitch, no pressure — just a look at what's
-          possible for your business.
+          Book a free 30-minute strategy call. No pitch, no pressure — just a look at
+          what&apos;s possible for your business.
         </p>
 
         <div className="mt-9 flex flex-col items-center gap-4">
