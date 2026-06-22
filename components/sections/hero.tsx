@@ -10,31 +10,30 @@ export function Hero() {
       <AnimatedGridPattern />
 
       {/* Ambient glow orbs */}
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/20 blur-[120px]" />
-      <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-violet-glow/10 blur-[100px]" />
+      <div className="pointer-events-none absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/15 blur-[120px]" />
+      <div className="pointer-events-none absolute right-0 top-0 h-[400px] w-[400px] rounded-full bg-chrome-glow/10 blur-[100px]" />
 
       <div className="relative z-10 mx-auto max-w-content px-6 py-24 text-center">
         <div className="mx-auto mb-7 inline-flex items-center gap-2 rounded-full border border-border bg-white/[0.03] px-4 py-1.5 font-mono text-[0.7rem] uppercase tracking-[0.14em] text-muted">
           <span className="relative flex h-2 w-2">
             <span className="absolute inset-0 rounded-full bg-accent-light animate-pulse-glow" />
           </span>
-          Agentic AI Workflows
+          Smart AI For Your Business
         </div>
 
         <h1 className="mx-auto max-w-[820px] font-display text-[clamp(2.4rem,6vw,4.6rem)] font-extrabold leading-[1.05] tracking-tight text-white animate-fade-up">
-          AI Workflows That{" "}
+          AI Helpers That{" "}
           <span className="bg-gradient-to-br from-accent-light to-accent bg-clip-text text-transparent">
-            Think, Adapt, and Compound Value
-          </span>{" "}
-          Over Time
+            Work For Your Business
+          </span>
         </h1>
 
         <p
           className="mx-auto mt-6 max-w-[600px] text-balance text-lg leading-relaxed text-muted animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          SaturnSide AI deploys custom agentic systems built around your business — live in
-          48 hours, running without supervision.
+          We build smart AI tools made just for you. They start working in 2 days.
+          You don&apos;t need to hire anyone new.
         </p>
 
         <div
@@ -43,7 +42,7 @@ export function Hero() {
         >
           <a href="https://saturnside.com">
             <Button size="lg">
-              Book a Free Strategy Call
+              Book a Free Call
               <ArrowRight size={16} />
             </Button>
           </a>

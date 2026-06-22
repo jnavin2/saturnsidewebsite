@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import {
   Table,
@@ -10,28 +13,28 @@ import {
 
 const ROWS = [
   {
-    saturnside: "Built around your trade, pricing, and dispatch rules",
-    generic: "One size fits all",
+    saturnside: "Made just for your business",
+    generic: "Same for every business",
   },
   {
-    saturnside: "Handles emergency vs routine jobs differently",
-    generic: "Treats every inquiry the same",
+    saturnside: "Knows what's urgent and what can wait",
+    generic: "Treats every call the same",
   },
   {
-    saturnside: "Routes jobs to the right technician automatically",
-    generic: "Cannot connect to scheduling or dispatch",
+    saturnside: "Sends jobs to the right worker by itself",
+    generic: "Can't connect to your schedule",
   },
   {
-    saturnside: "Your customer data stays on your own infrastructure",
-    generic: "Data routed through third-party servers",
+    saturnside: "Your customer info stays with you",
+    generic: "Your info goes to other companies",
   },
   {
-    saturnside: "Responds in 2 to 5 seconds, 24/7",
-    generic: "Delayed, generic, often offline after hours",
+    saturnside: "Answers in seconds, day and night",
+    generic: "Slow, and often off after hours",
   },
   {
-    saturnside: "Adapts as your pricing, zones, and team change",
-    generic: "Cannot learn or update without rebuilding",
+    saturnside: "Changes when your business changes",
+    generic: "Can't update without starting over",
   },
 ];
 
@@ -39,21 +42,33 @@ export function UseCasesComparison() {
   return (
     <section className="px-6 py-28">
       <div className="mx-auto max-w-content">
-        <div className="mx-auto max-w-[560px] text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5 }}
+          className="mx-auto max-w-[560px] text-center"
+        >
           <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent-light">
             The Difference
           </p>
           <h2 className="mt-3 font-display text-[clamp(1.8rem,4vw,2.6rem)] font-extrabold tracking-tight text-white">
-            SaturnSide AI vs Generic Automation Tools
+            SaturnSide AI vs Other Tools
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="mt-14">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="mt-14"
+        >
           <Table>
             <TableHeader>
               <TableRow>
                 <TableHead className="w-1/2 text-accent-light">SaturnSide AI</TableHead>
-                <TableHead className="w-1/2">Generic Automation Tools</TableHead>
+                <TableHead className="w-1/2">Other Tools</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -75,7 +90,7 @@ export function UseCasesComparison() {
               ))}
             </TableBody>
           </Table>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -79,7 +79,7 @@ export function AnimatedGridPattern({
             height={height - 1}
             x={x * width + 1}
             y={y * height + 1}
-            fill="rgba(167,139,250,0.45)"
+            fill="rgba(228,228,231,0.45)"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, maxOpacity, 0] }}
             transition={{

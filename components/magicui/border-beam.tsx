@@ -14,7 +14,7 @@ export function BorderBeam({ className = "", duration = 5 }: BorderBeamProps) {
       style={{
         padding: 1,
         background:
-          "conic-gradient(from 0deg, transparent 0%, rgba(167,139,250,0.9) 12%, transparent 28%)",
+          "conic-gradient(from 0deg, transparent 0%, rgba(228,228,231,0.9) 12%, transparent 28%)",
         WebkitMask:
           "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
         WebkitMaskComposite: "xor",

@@ -18,7 +18,7 @@ interface Particle {
   life: number;
 }
 
-export function Particles({ className = "", quantity = 70, color = "167,139,250" }: ParticlesProps) {
+export function Particles({ className = "", quantity = 70, color = "228,228,231" }: ParticlesProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
 

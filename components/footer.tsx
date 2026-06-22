@@ -33,10 +33,10 @@ function SaturnMark() {
   return (
     <svg viewBox="0 0 22 22" className="h-[18px] w-[18px] overflow-visible" fill="none">
       <circle cx="11" cy="11" r="10" stroke="rgba(255,255,255,0.15)" strokeWidth="1" />
-      <circle cx="11" cy="11" r="5.5" stroke="#a78bfa" strokeWidth="1.8" />
+      <circle cx="11" cy="11" r="5.5" stroke="#e4e4e7" strokeWidth="1.8" />
       <g transform="translate(11,11)">
         <g className="origin-[0px_0px] animate-[spin_3.2s_linear_infinite]">
-          <circle cx="10" cy="0" r="1.8" fill="#a78bfa" />
+          <circle cx="10" cy="0" r="1.8" fill="#e4e4e7" />
         </g>
       </g>
     </svg>

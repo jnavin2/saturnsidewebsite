@@ -32,7 +32,7 @@ export function Spotlight({ className = "" }: { className?: string }) {
       className={`pointer-events-none absolute inset-0 z-0 opacity-0 transition-opacity duration-300 group-hover/spotlight:opacity-100 ${className}`}
       style={{
         background:
-          "radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(139,92,246,0.15), transparent 70%)",
+          "radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(228,228,231,0.12), transparent 70%)",
       }}
     />
   );

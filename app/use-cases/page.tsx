@@ -12,7 +12,7 @@ import { CtaSection } from "@/components/sections/cta-section";
 export const metadata: Metadata = {
   title: "Use Cases — SaturnSide AI for Home Service Businesses",
   description:
-    "AI workflows for HVAC, plumbing, and electrical contractors — the tools and agents that keep your phones answered, jobs dispatched, and calendar filled.",
+    "AI helpers for HVAC, plumbing, and electrical companies. We answer phones, send out workers, and fill your schedule.",
 };
 
 export default function UseCasesPage() {

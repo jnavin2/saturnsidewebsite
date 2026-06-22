@@ -10,19 +10,19 @@ const config: Config = {
     extend: {
       colors: {
         background: "#0a0a0a",
-        surface: "#111113",
-        card: "#15151a",
-        border: "rgba(255,255,255,0.08)",
-        "border-hover": "rgba(255,255,255,0.16)",
-        violet: {
-          glow: "#a78bfa",
+        surface: "#131315",
+        card: "#18181b",
+        border: "rgba(255,255,255,0.09)",
+        "border-hover": "rgba(255,255,255,0.22)",
+        chrome: {
+          glow: "#e4e4e7",
         },
         accent: {
-          DEFAULT: "#8b5cf6",
-          light: "#a78bfa",
-          dark: "#6d28d9",
+          DEFAULT: "#c4c4c9",
+          light: "#f1f1f3",
+          dark: "#8e8e96",
         },
-        muted: "#8a8a93",
+        muted: "#9a9aa1",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],

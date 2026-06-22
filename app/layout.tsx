@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Sora, Roboto_Mono } from "next/font/google";
+import { Cursor } from "@/components/cursor";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,14 +23,14 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SaturnSide AI — Agentic AI Workflows",
+  title: "SaturnSide AI — Smart AI For Your Business",
   description:
-    "SaturnSide AI deploys custom agentic systems built around your business — live in 48 hours, running without supervision.",
+    "We build smart AI tools made just for your business. They start working in 2 days, with no extra hiring needed.",
   metadataBase: new URL("https://saturnside.com"),
   openGraph: {
-    title: "SaturnSide AI — Agentic AI Workflows",
+    title: "SaturnSide AI — Smart AI For Your Business",
     description:
-      "SaturnSide AI deploys custom agentic systems built around your business — live in 48 hours, running without supervision.",
+      "We build smart AI tools made just for your business. They start working in 2 days, with no extra hiring needed.",
     url: "https://saturnside.com",
     siteName: "SaturnSide AI",
     type: "website",
@@ -39,7 +40,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${sora.variable} ${robotoMono.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Cursor />
+        {children}
+      </body>
     </html>
   );
 }
